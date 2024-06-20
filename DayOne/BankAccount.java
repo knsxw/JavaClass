@@ -9,6 +9,7 @@ public class BankAccount {
     }
 
     public void deposit(double amount) {
+        System.out.println("Depositing $" + amount);
         this.balance += amount;
     }
 
@@ -16,6 +17,7 @@ public class BankAccount {
         if (amount > this.balance) {
             System.out.println("Insufficient balance");
         } else {
+            System.out.println("Withdrawing $" + amount);
             this.balance -= amount;
         }
     }

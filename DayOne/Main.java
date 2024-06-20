@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        BankAccount myAcc = new BankAccount(12000);
-        System.out.println("Current Balance: " + myAcc.getBalance());
-        myAcc.deposit(3000);
-        System.out.println("Current Balance: " + myAcc.getBalance());
-        myAcc.withdraw(5000);
-        System.out.println("Current Balance: " + myAcc.getBalance());
+        BankAccount myAcc = new BankAccount(100);
+        System.out.println("Opening Balance: $" + myAcc.getBalance());
+        myAcc.deposit(500);
+        System.out.println("New Balance: $" + myAcc.getBalance());
+        myAcc.withdraw(200);
+        System.out.println("New Balance: $" + myAcc.getBalance());
     }
 }
