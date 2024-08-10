@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String flag;
         do {
-            inputRequest();
+            inputData();
             System.out.print("Do you want to add new animal? (yes/no): ");
             flag = br.readLine();
         } while (flag.equalsIgnoreCase("yes"));
@@ -29,7 +29,7 @@ public class Main {
         }
     }
 
-    public static void inputRequest() throws IOException {
+    public static void inputData() throws IOException {
         Animal animal = new Animal();
         System.out.print("Enter the name of the animal: ");
         animal.name = br.readLine();
